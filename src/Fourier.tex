@@ -1,0 +1,22 @@
+%! Author = chicken1925
+%! Date = 2020/10/27
+
+% Preamble
+\documentclass[11pt]{jsarticle}
+
+% Packages
+\usepackage{amsmath}
+
+% Document
+\begin{document}
+2119116s 佐野海徳\\
+    \fbox{1}
+    \par $u(x,t) = \phi(x)\varphi(t)$が解である。変形して$\phi(x)\varphi{\prime\prime}(x) = \phi{\prime\prime}(t)\phi(x)$
+ここから$\frac{\phi{\prime\prime}}{\phi(x)} = \frac{\varphi{\prime\prime}(t)}{\phi(t)} = \alpha$(定数)となる。故に$\phi{\prime\prime}(x) = \alpha\phi(x), \varphi{\prime\prime}(t) = \alpha\varphi(t)$。
+    $\phi(0) = \phi(\pi) = 0$から$\alpha < 0$,
+\fbox{2}
+\par(1) $f_a$をフーリエ変換すると、$\hat{f}_a = \frac{1}{2\pi}\int_{-\infty}^{infty}e^{-|a|x} e^{-i\xi x} dx = \frac{1}{\pi}\frac{1}{a^2 + \xi^2}$であり、$g_a(\xi) = \frac{1}{\xi + a^2}$、$\hat{f}_a = \frac{1}{\pi}g_a(\xi)$。
+\par(2) $g_a$をフーリエ変換すると、$\hat{g}_a = \frac{\sqrt{\frac{\pi}{2}}e^a|\xi|}{a}$である。
+
+
+\end{document}
