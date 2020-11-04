@@ -6,17 +6,31 @@
 
 % Packages
 \usepackage{amsmath}
-
+\usepackage{amsfonts}
+\usepackage{url}
 % Document
 \begin{document}
 2119116s 佐野海徳\\
     \fbox{1}
-    \par $u(x,t) = \phi(x)\varphi(t)$が解である。変形して$\phi(x)\varphi{\prime\prime}(x) = \phi{\prime\prime}(t)\phi(x)$
+    \par $u(x,t) = \phi(x)\varphi(t)$が解である。$\phi(x)\varphi{\prime\prime}(t) = \phi{\prime\prime}(t)\phi(x)$
 ここから$\frac{\phi{\prime\prime}}{\phi(x)} = \frac{\varphi{\prime\prime}(t)}{\phi(t)} = \alpha$(定数)となる。故に$\phi{\prime\prime}(x) = \alpha\phi(x), \varphi{\prime\prime}(t) = \alpha\varphi(t)$。
-    $\phi(0) = \phi(\pi) = 0$から$\alpha < 0$,
+    $\phi(0) = \phi(\pi) = 0$から$\alpha < 0$,よって$\phi(x) = A\sin (nx)$.同様に$\varphi(t) = C\cos (nt) + D\sin (nt)$。また初期値条件より
+$\sum^{\infty}_{n = 1}E\sin (nx) = 0$かつ$\frac{\partial u}{\partial t}(x,0) = \sum^{\infty}_{n = 1}F\sin (nx) = {\sin}^3 x$であり、これらの両辺をフーリエ変換すると
+$E = 0$,$F = \frac{2}{n\pi}\int_{0}^{\pi} {\sin}^3 x \sin (nx) dx$。積分記号の中身を変形すると$\int_{0}^{\pi} \frac{\cos ((n + 3)x) - 3\cos ((n + 1)x) - \cos ((n - 1)x) - \cos((n - 3)x)}{8}dx$
+それぞれ$(n + 3)x = s,(n + 1)x = t, (n - 1)x = u,(n - 3)x = v$として$\frac{1}{8}{\int_{0}^{\pi} \frac{1}{n + 3}\cos s ds - 3\int_{0}^{\pi} \frac{1}{n + 1}\cos t dt  + 3\int_{0}^{\pi} \frac{1}{n - 1}\cos u du - \int_{0}^{\pi} \frac{1}{n - 3}\cos v dv}$
+これをそれぞれ計算して、$\frac{12\sin n\pi}{\pi(n^5 - 10n^3 + 9n)}$であるから、求める答えは
+$u(x,t) = \sum_{n = 1}^{\infty}\{\frac{12\sin n\pi}{\pi(n^5 - 10n^3 + 9n)\sin nt}\} \sin nx = \frac{3}{4}\sin t sin nx$。\newpage
 \fbox{2}
-\par(1) $f_a$をフーリエ変換すると、$\hat{f}_a = \frac{1}{2\pi}\int_{-\infty}^{infty}e^{-|a|x} e^{-i\xi x} dx = \frac{1}{\pi}\frac{1}{a^2 + \xi^2}$であり、$g_a(\xi) = \frac{1}{\xi + a^2}$、$\hat{f}_a = \frac{1}{\pi}g_a(\xi)$。
-\par(2) $g_a$をフーリエ変換すると、$\hat{g}_a = \frac{\sqrt{\frac{\pi}{2}}e^a|\xi|}{a}$である。
-
-
+\par(1) $f_a$をフーリエ変換すると、$\hat{f}_a = \frac{1}{2\pi}\int_{-\infty}^{\infty}e^{-|a|x} e^{-i\xi x} dx$。積分範囲が0以上のものとそれ以外で分ける。$\int_{0}^{\infty}e^{-i\xi x - ax} dx$。$i\xi x - ax = u$とすると$\frac{du}{dx} = -i\xi - a$だから、
+先程の式は$\frac{1}{i\xi + a}\int_{0}^{\infty}e^u du = \frac{a}{\xi^2 + a^2} - \frac{i\xi}{\xi^2 + a^2} = \frac{-i\xi - a}{\xi^2 + a^2}$。積分区間が0未満の方も同様にすると、最終的な計算結果は
+$\frac{1}{\pi}\frac{1}{a^2 + \xi^2}$であり、$g_a(\xi) = \frac{1}{\xi + a^2}$、$\hat{f}_a = \frac{1}{\pi}g_a(\xi)$。\newpage
+\fbox{3}\par 上の方程式にフーリエ変換を施すと、$\tilde{u}(\xi,t) = \int_{-\infty}^{\infty} u(x,t)e^{-i\xi x} dx$であり初期条件をフーリエ変換すると$\frac{d \tilde{u}}{dt} = -{\xi}^2\tilde{u}, \tilde{u}(\xi,0) = 1$。
+    よって、$\tilde{u}(\xi, t) = e^{-{\xi}^{2}t}$。方程式にフーリエ逆変換を施すと、$u(x,t) = \frac{1}{2\pi}\int_{-\infty}^{\infty}\tilde{u}(\xi,t)e^{i\xi x} d\xi = \frac{1}{2\pi}\int_{-\infty}^{\infty}e^{-t(\xi - \frac{ix}{2t})^2} e^(\frac{-x^2}{4t})d\xi
+= \frac{1}{2\sqrt{\pi t}}e^(\frac{-x^2}{4t})$。これがこの方程式の基本解。この基本解K(x,t)を用いて初期値問題の解を構成すると、$u(x,t) = \int_{\mathbb{R}_y} K(x - y,t)e^{-y^2} dy$。
+$\frac{1}{2\sqrt{\pi t}}$を積分記号の外に出し、eについて式変形を行う。$e^{-y^2 - \frac{(x-y)^2}{4t}} = e^{(\sqrt{\frac{-1}{4t} - 1}y + \frac{x}{4\sqrt{\frac{-1}{4(4t - 1)}}t}) - \frac{x^2}{4t} - \frac{x^2}{16t^2(\frac{-1}{4t} - 1)}}$
+ここで$u = \frac{(\frac{-1}{t} - 4)ty + x}{2\sqrt{\frac{-1}{t} - 4}t}$とすると$\frac{du}{dy} = \frac{\sqrt{\frac{-1}{t} - 4}}{2}$であるから、
+もとの式は$\frac{1}{2\pi t}\int_{-\infty}^{\infty}\frac{2e^{u^2 + \frac{x^2}{4t^2(\frac{1}{t} + 4)} - \frac{x^2}{16t^2(\frac{-1}{4t} - 1)}}}{\sqrt{\frac{-1}{t} - 4}}du$これを計算すると、
+$\frac{e^{\frac{-x^2}{4t + 1}}}{\sqrt{4t + 1}}$となり、これが求める初期値問題の解である。\\
+    参考\url{http://blog.livedoor.jp/plant_field/archives/9619101.html}\\
+    \url{https://www.sci.hokudai.ac.jp/~inaz/lecture/butsurisuugaku2/html/model/node24.html}
 \end{document}
