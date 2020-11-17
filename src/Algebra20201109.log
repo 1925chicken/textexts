@@ -1,9 +1,9 @@
-This is e-pTeX, Version 3.14159265-p3.8.2-190908-2.6 (utf8.euc) (TeX Live 2019/Debian) (preloaded format=platex 2020.10.12)  5 NOV 2020 01:39
+This is e-pTeX, Version 3.14159265-p3.8.2-190908-2.6 (utf8.euc) (TeX Live 2019/Debian) (preloaded format=platex 2020.10.12)  10 NOV 2020 14:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**linear_algebra_midterm.tex
-(./linear_algebra_midterm.tex
+**Algebra20201109.tex
+(./Algebra20201109.tex
 pLaTeX2e <2020-02-02>+2 (based on LaTeX2e <2020-02-02> patch level 2)
 L3 programming layer <2020-02-14>
 (/usr/share/texlive/texmf-dist/tex/platex/jsclasses/jsarticle.cls
@@ -115,8 +115,8 @@ File: l3backend-dvips.def 2020-02-03 L3 backend support: dvips
 \g__pdf_backend_link_int=\count189
 \g__pdf_backend_link_sf_int=\count190
 )
-(./linear_algebra_midterm.aux)
-\openout1 = `linear_algebra_midterm.aux'.
+(./Algebra20201109.aux)
+\openout1 = `Algebra20201109.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
@@ -137,45 +137,26 @@ LaTeX Font Info:    ... okay on input line 11.
 LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 15.
+(Font)              scaled to size 6.72699pt on input line 14.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 4.805pt on input line 15.
+(Font)              scaled to size 4.805pt on input line 14.
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 1
+4.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 14.
+ [1
 
-Overfull \hbox (2.1071pt too wide) in paragraph at lines 58--107
-[]\OT1/cmr/m/n/10 (2) $[] \OMS/cmsy/m/n/10 !$ $[] !$ $[]$ 
- []
-
-
-Overfull \hbox (48.90862pt too wide) in paragraph at lines 108--134
-[]\OT1/cmr/m/n/10 (1)(\JY1/mc/m/n/10 左辺\OT1/cmr/m/n/10 ) = $[]$\JY1/mc/m/n/10
- 。
- []
-
-
-Overfull \hbox (17.74805pt too wide) in paragraph at lines 108--134
-[]$[] \OT1/cmr/m/n/10 =$
- []
-
-
-Underfull \hbox (badness 2512) in paragraph at lines 108--134
-[]$ \JY1/mc/m/n/10 と
- []
-
-[1
-
-]
-Overfull \hbox (56.39989pt too wide) in paragraph at lines 135--169
-[]\JY1/mc/m/n/10 これを第一列に関して余因子展開すると $[]$
- []
-
-[2] [3] (./linear_algebra_midterm.aux) ) 
+] (./Algebra20201109.aux) ) 
 Here is how much of TeX's memory you used:
- 1205 strings out of 482863
- 15766 string characters out of 5959217
- 277917 words of memory out of 5000000
- 16585 multiletter control sequences out of 15000+600000
+ 1224 strings out of 482863
+ 16018 string characters out of 5959217
+ 256903 words of memory out of 5000000
+ 16601 multiletter control sequences out of 15000+600000
  537708 words of font info for 50 fonts, out of 8000000 for 9000
  269 hyphenation exceptions out of 8191
- 30i,10n,25p,218b,158s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 30i,4n,25p,260b,158s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on linear_algebra_midterm.dvi (3 pages, 14252 bytes).
+Output written on Algebra20201109.dvi (1 page, 2712 bytes).
