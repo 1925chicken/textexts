@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.2-190908-2.6 (utf8.euc) (TeX Live 2019/Debian) (preloaded format=platex 2020.10.12)  17 NOV 2020 14:43
+This is e-pTeX, Version 3.14159265-p3.8.2-190908-2.6 (utf8.euc) (TeX Live 2019/Debian) (preloaded format=platex 2020.10.12)  17 NOV 2020 14:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -120,13 +120,6 @@ Overfull \hbox (46.35732pt too wide) in paragraph at lines 17--20
 
  []
 
-
-Overfull \hbox (119.72592pt too wide) in paragraph at lines 17--20
-\JY1/mc/m/n/10.95 で位数が \OT1/cmr/m/n/10.95 16 \JY1/mc/m/n/10.95 でないので原
-始根でない 。 \OT1/cmr/m/n/10.95 3 \JY1/mc/m/n/10.95 について同様に計算すると 
-、 \OT1/cmr/m/n/10.95 3,9,10,13,5,15,11,16,14,8,7,4,12,2,6,1
- []
-
 [1
 
 ] (./Algebra20201116.aux) ) 
@@ -139,4 +132,4 @@ Here is how much of TeX's memory you used:
  264 hyphenation exceptions out of 8191
  30i,4n,25p,211b,152s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Algebra20201116.dvi (1 page, 1424 bytes).
+Output written on Algebra20201116.dvi (1 page, 1388 bytes).

@@ -1,9 +1,9 @@
-This is e-pTeX, Version 3.14159265-p3.8.2-190908-2.6 (utf8.euc) (TeX Live 2019/Debian) (preloaded format=platex 2020.10.12)  25 NOV 2020 12:48
+This is e-pTeX, Version 3.14159265-p3.8.2-190908-2.6 (utf8.euc) (TeX Live 2019/Debian) (preloaded format=platex 2020.10.12)  22 NOV 2020 11:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**Coding_Theorhy.tex
-(./Coding_Theorhy.tex
+**Algebra20201119.tex
+(./Algebra20201119.tex
 pLaTeX2e <2020-02-02>+2 (based on LaTeX2e <2020-02-02> patch level 2)
 L3 programming layer <2020-02-14>
 (/usr/share/texlive/texmf-dist/tex/platex/jsclasses/jsarticle.cls
@@ -105,17 +105,6 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
 LaTeX Info: Redefining \[ on input line 2859.
 LaTeX Info: Redefining \] on input line 2860.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/cases/cases.sty
-Package: cases 2002/05/02 ver 2.5 
-)
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
-Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\symAMSa=\mathgroup5
-\symAMSb=\mathgroup6
-LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
-LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
-(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-dvips.def
 File: l3backend-dvips.def 2020-02-03 L3 backend support: dvips
 \l__pdf_internal_box=\box64
@@ -126,83 +115,41 @@ File: l3backend-dvips.def 2020-02-03 L3 backend support: dvips
 \g__pdf_backend_link_int=\count189
 \g__pdf_backend_link_sf_int=\count190
 )
-(./Coding_Theorhy.aux)
-\openout1 = `Coding_Theorhy.aux'.
+(./Algebra20201119.aux)
+\openout1 = `Algebra20201119.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 16.
+(Font)              scaled to size 6.72699pt on input line 14.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 4.805pt on input line 16.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 16.
+(Font)              scaled to size 4.805pt on input line 14.
+ [1
 
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 16.
-
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-Overfull \hbox (20.82394pt too wide) in paragraph at lines 20--50
-[]\OT1/cmr/m/n/10 (d)d \JY1/mc/m/n/10 を偶奇で場合分けすると 、 $\OT1/cmr/m/n/1
-0 2\OML/cmm/m/it/10 t < d$ \JY1/mc/m/n/10 は $\OMS/cmsy/m/n/10 b\OML/cmm/m/it/1
-0 d[]\OMS/cmsy/m/n/10 c \OT1/cmr/m/n/10 = []$ ,$[] = []$\JY1/mc/m/n/10 。
- []
-
-[1
-
-]
-
-LaTeX Warning: Command \textless invalid in math mode on input line 55.
-
-LaTeX Font Info:    Trying to load font information for OML+cmr on input line 5
-5.
-(/usr/share/texlive/texmf-dist/tex/latex/base/omlcmr.fd
-File: omlcmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 55.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 55.
-
-[2]
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 7
-7.
- (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 77.
- [3] [4] [5]
-[6] [7] [8] [9] [10] [11] (./Coding_Theorhy.aux) ) 
+] (./Algebra20201119.aux) ) 
 Here is how much of TeX's memory you used:
- 1359 strings out of 482863
- 17981 string characters out of 5959217
- 263573 words of memory out of 5000000
- 16714 multiletter control sequences out of 15000+600000
- 538953 words of font info for 56 fonts, out of 8000000 for 9000
+ 1205 strings out of 482863
+ 15696 string characters out of 5959217
+ 253903 words of memory out of 5000000
+ 16585 multiletter control sequences out of 15000+600000
+ 537708 words of font info for 50 fonts, out of 8000000 for 9000
  269 hyphenation exceptions out of 8191
- 30i,8n,27p,355b,158s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 30i,4n,25p,211b,158s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Coding_Theorhy.dvi (11 pages, 30568 bytes).
+Output written on Algebra20201119.dvi (1 page, 1248 bytes).
