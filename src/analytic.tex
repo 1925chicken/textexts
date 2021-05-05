@@ -1,0 +1,40 @@
+%! Author = chicken1925
+%! Date = 2021/05/02
+
+% Preamble
+\documentclass[11pt]{jsarticle}
+
+% Packages
+\usepackage{amsmath}
+\usepackage{mathrsfs}
+\usepackage{amsfonts}
+
+% Document
+\begin{document}
+2119116s 佐野　海徳\\
+
+\fbox{1}
+\par (1) $\epsilon \subset P(S)$であり、$\sigma(\epsilon)$は$\epsilon$を含む$\sigma$加法族で最小のものなので$\sigma(\epsilon) \subset P(S)$
+        Sが可算集合であるから、Sの部分集合も可算集合。また、すべてのSの部分集合は$\epsilon$の任意の元の和集合で作り出すことができるから$P(S)$は$\sigma(\epsilon)$に含まれる。
+        よって、$P(S) \subset \sigma(\epsilon)$である。故に$\sigma(\epsilon) = P(S)$。
+\par (2) まず$A \subset S$として $A^{c} \subset S$を示す。まず、Aが可算集合のとき、$(A^{c})^{c}$が可算集合なので$A^{c} \subset S$。
+$A^c$が可算集合なら$A^c \subset S$は自明。よって$A \in \mathscr{A} \rightarrow A^c \in \mathscr{A}$が示された。
+また、$\emptyset$,$S \in \mathscr{A}$は、$\emptyset$が要素数0の集合とみなせるから、$\emptyset \in \mathscr{A} \rightarrow \emptyset^{c} = S \in \mathscr{A}$が示せる。
+ここで、可算集合どうしの和集合を考えると、可算集合の和集合も可算集合だから、$\mathscr{A}$に属する。また、Aの元のうち、1要素だけを含む集合はすべて可算集合であるから、$\mathscr{A}$に属する。
+ここで、Aの部分集合はこのような単一の元のみを含む集合の和集合で表せるので、$\mathscr{A}$に属する集合はすべてそのような方法で和集合として表せるため和集合を取る演算で閉じている。
+よって有限加法性も示されたので定義より題意が示された。\\
+
+\fbox{2}
+\par (1) $a$を定数とし、考える定数関数を$f$として、次のような集合Tを考える。
+$T = \{x \in S | f(x) = a\}$。
+このとき、Tは明らかにS全体であり、$T \in \mathscr{B}$だから$\mathscr{A} - \mathscr{B}$可測である。
+\par (2)$\mathscr{A} = \{\emptyset,S\}$とし、$f:S \rightarrow T$を$a \in S$に対して$b\in S$であるbを1つとってきて、$a \neq b$ならf(a) = 1,そうでないならf(b) = 0とすると、
+$f^{-1}(0) = a$だが、$a \notin \mathscr{A}$は定義より明らかなのでこのとき非可測である。
+\par (3) $\mathbb{R}^2 \rightarrow \mathbb{R}$で$max(a,b),min(a,b)$は連続関数であるからBorel可測である。
+よって$f,g:S \rightarrow \mathbb{R}$が可測であるから、max,minをhとすると、$h \circ (f,g)$も可測であるから題意が示された。\\
+\fbox{3}\\
+\par
+\fbox{4}
+\par
+
+\end{document}

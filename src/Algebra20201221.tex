@@ -1,0 +1,22 @@
+%! Author = chicken1925
+%! Date = 2020/12/23
+
+% Preamble
+\documentclass[11pt]{article}
+
+% Packages
+\usepackage{amsmath}
+\usepackage{amsfonts}
+% Document
+\begin{document}
+2119116s 佐野海徳\\
+HW51\\
+巡回群Gの生成元をa,単位元を1で表す。Gの部分群をHと書く。Hの元はすべて生成元のべき$a^i(i \in \mathbb{Z})$で書ける。
+a = 1,つまりGが単位元だけでなる群のときは自明。また、Hが単位元1のみからなるGの部分群であるとき、Hは巡回群。$a \neq 1$として
+Hは単位元1の他にも元を持つとすると、$S = \{i \in \mathbb{Z} | i > 0 \& a^i \in H\}$となる集合Sを考える。Hについての仮定と$a^{-i} \in H \Leftrightarrow a^i \in H$
+から$S \neq \emptyset$がわかる。したがってSは最小元mをもつ。このとき$H = <a^m>$が成り立つ。このとき$<a^m> \subseteq H$は明らか。逆に$a^n(n \in \mathbb{Z})$とする。
+nをmで割ると$n = mq + r$となるある整数の組m,r$0 \leq r < m$が一意的に存在し、$a^r = a^n a^{-mq} \ in H$。mの最小性によりr = 0,故にn = mq。これより$a^n = a^{mq} \in <a^m>$。
+よって$H \subseteq <a^m>$。
+
+
+\end{document}

@@ -1,0 +1,44 @@
+%! Author = chicken1925
+%! Date = 2021/01/27
+
+% Preamble
+\documentclass[11pt]{jsarticle}
+
+% Packages
+\usepackage{amsmath}
+\usepackage{amsfonts}
+% Document
+\begin{document}
+    2年 2119116s 佐野海徳\\
+    \par 問1
+    (1) e\\
+    (2) $\log 2 + i \frac{n \pi}{3} (n \in \mathbb{Z})$\\
+    (3) 1\\
+    (4) $e^{\frac{- (4n + 1)\pi}{2}}$($n \in \mathbb{Z}$)
+    \par 問2\\
+    問題文より$z = re^{it}(0 \leq t \leq 2\pi)$であり、rが十分に小さいことから$0 < r < 1$として考える。\\
+    (1)$\frac{1}{z(1 - z)^2} = \frac{1}{z} - \frac{1}{z - 1} + \frac{1}{(z - 1)^2}$と部分分数分解できる。中心0かつ$0 < r < 1$となる円のうち一つをCとして、C内部と周で被積分関数の2項目、3項目は
+    正則であるからコーシーの積分定理が適用できて、求める積分値$f(1) = \frac{1}{2\pi i} \int_{0}^{2\pi} \frac{1}{re^{it} ire^{it}}dt + 0 + 0\\$
+    $ = \frac{1}{2\pi i} \int_{0}^{2\pi} i dt \\$
+    $ = \frac{1}{2\pi i}\left[ (it) \right]_{0}^{2\pi}\\$
+    $ = 1$であり、f(1) = 1が確かに成り立つ。\\
+    (2)$\frac{1}{z^2(1 - z)^2} = \frac{1}{z^2} + \frac{2}{z} - \frac{2}{z - 1} + \frac{1}{(z - 1)^2}$と部分分数分解できる。
+    (1)と同様にしてこの被積分関数の3項目以降は中心0かつ$0 < r < 1$となる円のうち一つをCとしてその周と内部で正則であるからコーシーの積分定理が適用できる。
+    よって$f(2) = \frac{1}{2\pi i} \int_{0}^{2\pi} \frac{2}{re^{2it}}re^{it}dt + \frac{1}{2\pi i} \int_{2\pi}^{0} 2i dt \\$
+    $ = \frac{1}{2\pi}\left[ (ie^{-2\pi i}) \right]_{0}^{2\pi} + 2\\$
+    $ = \frac{1}{2\pi}(i - i) + 2\\$
+    $ = 0 + 2 = 2$となり、確かにf(2) = 2。\\
+    (3)一般のnに対して部分分数分解を行うと、$\Sigma_{k = 1}^{n} \frac{n - k + 1}{z^n} - \frac{n}{z - 1} + \frac{1}{(z - 1)^2}$となる。
+    ここで$\frac{1}{re^{nit}} \times rie^{it} = i\times e^{(i - n)it}$であるから、$2 \leq n$のときは分母に${e^{(n - 1)it}}(2 \leq n)$が残る。
+    また、$\frac{1}{e^{nit}}(n \in \mathbb{N})$に対して$\frac{1}{e^{-nit}} = \cos(-nt) + \i\sin(nt)$であり、条件の範囲内で正則だからコーシーの積分定理から積分値は0。
+    よって$\frac{1}{z}$の積分値だけを考えればf(n)となる。ゆえに求める値は$f(n) = n \int_{|z| = r} \frac{1}{z} dz = n$となる。
+    \newpage
+\par 問3
+    \par $f(z) = \frac{e^z}{z^{n + 1}}dz$とすると、$f(z)$は$z = 0$でn + 1位の極を持ち、これが唯一の孤立特異点なので、留数を求めると、\\
+    $\underset{z = 0}{Res}f(z) dz = \frac{1}{n!} \underset{z \rightarrow 0}{\lim}\frac{d^n}{dz^n}{z^{n + 1} \frac{e^z}{z^{n + 1}}}$\\
+    $ = \frac{1}{n!}\underset{z \rightarrow 0}{\lim}e^z$\\
+    $ = \frac{1}{n!}$\\
+    となり、求める値は\\
+    $\frac{1}{2\pi i}\int_{|z| = 1} f(z) dz = \frac{1}{n!}$。
+
+\end{document}

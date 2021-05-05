@@ -1,0 +1,67 @@
+%! Author = chicken1925
+%! Date = 2020/11/26
+
+% Preamble
+\documentclass[11pt]{article}
+
+% Packages
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% Document
+\begin{document}
+2119116s 佐野海徳\\
+HW37
+\par 2が既約でないならa,b,c,d$\in \mathbb{Z}$を用い、共役をとると$2 = (a + \sqrt{-5}b)(c + \sqrt{-5}d),2 = (a - \sqrt{-5}b)(c - \sqrt{-5}d)$と書ける。
+辺々掛けると$4 = (a^2 + 5b^2)(c^2 + 5d^2)$となるが、この等式を満たす整数の組は(a,b,c,d) = (2,0,2,0)以外に存在しない。つまり、どう書き表しても2 = 2 + 0i,つまり2であるから、2は既約元。
+同様の条件で3について議論すると、3が既約でないなら$3 = (a + \sqrt{-5}b)(c + \sqrt{-5}d),3 = (a - \sqrt{-5}b)(c - \sqrt{-5}d)$と表されるはずであるが、辺々掛けると
+$9 = (a^2 + 5b^2)(c^2 + 5d^2)$となるが、これを満たす整数の組は(a,b,c,d) = (3,0,3,0)以外は存在しない、つまり3としか表せないのでこれも既約。
+$1 + \sqrt{-5} = (a + \sqrt{-5}b)(c - \sqrt{-5}d), 1 - \sqrt{-5} = (a - \sqrt{-5}b)(c - \sqrt{-5}d)$と表せるとするなら、辺々掛けて$6 = (a^2 + 5b^2)(c^2 + 5d^2)$となるが、
+これを満たすのは(a,b,c,d) = $(\pm1,\pm1,\pm1\,\pm1)$であり、この中に$1 \pm \sqrt{-5}$となる組み合わせが含まれている。よって$1\pm \sqrt{-5}$も既約元である。\\
+HW38
+\par 4次正方行列の異なる固有値をそれぞれ$\alpha,\beta,\gamma,\sigma$とおく。4を自然数の組み合わせで分割すると、
+$4 = 1 + 1 + 2 = 1 + 3 = 1 + 1 + 1 + 1 = 2 + 2$となる。よって4次正方行列におけるジョルダン標準形は\\
+$\left(
+\begin{array}{cccc}
+    \alpha & 1 & 0 & 0 \\
+    0 & \alpha & 1 & 0 \\
+    0 & 0 & \alpha & 1 \\
+    0 & 0 & 0 & \alpha
+\end{array}
+\right),
+\left(
+\begin{array}{cccc}
+    \alpha & 0 & 0 & 0 \\
+    0 & \beta & 0 & 0 \\
+    0 & 0 & \gamma & 1 \\
+    0 & 0 & 0 & \gamma
+\end{array}
+\right),\\
+\left(
+\begin{array}{cccc}
+    \alpha & 0 & 0 & 0 \\
+    0 & \beta & 1 & 0 \\
+    0 & 0 & \beta & 1 \\
+    0 & 0 & 0 & \beta
+\end{array}
+\right),
+\left(
+\begin{array}{cccc}
+    \alpha & 0 & 0 & 0 \\
+    0 & \beta & 0 & 0 \\
+    0 & 0 & \gamma & 0 \\
+    0 & 0 & 0 & \sigma
+\end{array}
+\right),\\
+\left(
+\begin{array}{cccc}
+    \alpha & 1 & 0 & 0 \\
+    0 & \alpha & 0 & 0 \\
+    0 & 0 & \beta & 1 \\
+    0 & 0 & 0 & \beta
+\end{array}
+\right)
+$の5種類である。
+
+
+\end{document}

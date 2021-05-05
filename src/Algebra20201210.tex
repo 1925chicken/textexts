@@ -1,0 +1,23 @@
+%! Author = chicken1925
+%! Date = 2020/12/11
+
+% Preamble
+\documentclass[11pt]{jsarticle}
+
+% Packages
+\usepackage{amsmath}
+\usepackage{amsfonts}
+% Document
+\begin{document}
+2119116s 佐野　海徳\\
+HW45
+\par $\left[\mathbb{Q}(\sin72):\mathbb{Q}\right]$の次数が2べきであると示せば良い。$\sin(72 \times 5) = \sin(72 \times 3 + 72 \times 2) = \sin(3 \times 72)\cos(2 \times 72) + \cos(3\times72) \sin(2 \times 72)$\\
+$ = \sin72(3 - 4\sin^2 72)(1 - 2\sin^2 72) + \cos72(1 - 4\sin^2 72)2\sin 72 \cos 72$。\\
+整理して$\sin72 = x$,左辺は0となり、右辺を$f(x)$と置くと$f(x) = 16x^5 - 20x^3 + 5x = x(16x^4 - 20x^2 + 5)$。よって$f(x)$は4次以下。
+ここで5は5以下の素数のうち5のみの倍数である。しかし、16も20も5の倍数でない。よってこの$f(x)$は既約多項式。つまり4次である。ゆえに$\left[\mathbb{Q}(\sin 72):\mathbb{Q}\right]$の次数は4であり、確かに作図可能であると示された。
+\\HW46
+\par まず条件を満たす2冪は$1,2,4,8,16$。また、20以下のフェルマー素数は$2^{2^0} + 1,2^{2^1} + 1,2^{2^2} + 1$,つまり$3,5,17$も作図可能。($1 /times x(x /in \{3,5,17\})$)だから。
+ここで、フェルマー素数と2冪の積で表せる数を並べると、$2 \times 3,2\times 5,2 \times 8,4 \times 3,4 \times 5,3 \times 5$。つまり$6,10,16,12,20,15$。つまり、n = $3,4,5,6,8,10,12,15,16,17,20$。
+
+
+\end{document}
